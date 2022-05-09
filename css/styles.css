@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+:root{
+    --bg-gray: #ccc;
+    --color-primary: darkcyan;
+    --white: #FFFFFF;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
 html, body{
-    background-color: #ccc;
+    background-color: var(--bg-gray);
 }
 
 header{
-    background-color:darkcyan;
-    color: #FFFFFF;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
 }
 
 a, a:hover{
@@ -18,8 +48,12 @@ a, a:hover{
     color: unset;
 }
 
-nav{
+.dsmusic-contact-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+}
+
+.dsmusic-contact-container img{
+    margin-right: 10px;
 }
