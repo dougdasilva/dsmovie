@@ -2,7 +2,7 @@
 
 :root {
     --bg-gray: #ccc;
-    --color-primary: darkcyan;
+    --color-primary: #008b8b;
     --text-gray: #4a4a4a;
     --white: #FFFFFF;
     --text-light-gray: #aaa;
@@ -70,7 +70,7 @@ a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0 10px;
 }
 
 .dsmovie-card {
@@ -101,6 +101,7 @@ a:hover {
     margin: 25px;
     text-align: center;
 }
+
 .dsmovie-description-bottom{
     display: flex;
     flex-direction: column;
@@ -116,6 +117,7 @@ a:hover {
 .dsmovie-description-bottom img {
     width: 22px;
 }
+
 .dsmovie-description-bottom p{
     font-size: 12px;
     font-weight: 400;
@@ -192,4 +194,51 @@ a:hover {
 
 .form-control {
     margin-bottom: 20px;
+}
+
+.dsmovie-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsmovie-pagination-box button img{
+    filter: brightness(0) saturate(100%) invert(37%) sepia(69%) saturate(2473%) hue-rotate(154deg) brightness(84%) contrast(106%);
+}
+
+.dsmovie-pagination-box button:disabled{
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img{
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal{
+    transform: rotate(180deg);
 }
